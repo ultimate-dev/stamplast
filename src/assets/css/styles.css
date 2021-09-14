@@ -1,7 +1,2 @@
 @import "../fonts/gilroy/stylesheet.css";
-
 @import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
