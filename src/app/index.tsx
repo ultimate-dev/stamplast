@@ -1,5 +1,6 @@
 import { useEffect, Fragment } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 // AOS
 import AOS from "aos";
 // Components
@@ -13,6 +14,8 @@ import "moment/locale/en-gb";
 import routes from "../source/routes";
 
 const App = () => {
+  const { open } = useSelector((state: any) => state.appReducer.nav);
+
   useEffect(() => {
     AOS.init({
       offset: 80,
@@ -30,17 +33,24 @@ const App = () => {
   return (
     <Fragment>
       <Navbar />
-      <Router>
+      <div
+        className={
+          "relative h-screen w-full transition-all ease-linear duration-200 transform" +
+          (open ? " -translate-x-60" : " -translate-x-0")
+        }
+      >
         <Switch>
           {routes.map((route, key: number) => (
             <Route
               key={key}
+              path={route.path}
               render={(props: any) => <route.page {...props} />}
+              exact={route.exact}
             />
           ))}
         </Switch>
-      </Router>
-      <Footer />
+        <Footer />
+      </div>
     </Fragment>
   );
 };

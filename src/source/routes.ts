@@ -5,5 +5,6 @@ export default [
   {
     path: ["/", "/home"],
     page: Home,
+    exact: true,
   },
 ];

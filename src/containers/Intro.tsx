@@ -1,6 +1,7 @@
 import Tilt from "react-parallax-tilt";
 import Particles from "react-tsparticles";
 import { RiArrowRightFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 // Svg
 import MapSvg from "../assets/svgs/map.svg";
 
@@ -25,12 +26,6 @@ const options = {
         },
       },
       enable: true,
-      outModes: {
-        bottom: "out",
-        left: "out",
-        right: "out",
-        top: "out",
-      },
       speed: 1,
     },
     number: {
@@ -84,7 +79,10 @@ class IntroProps {}
 export default ({}: IntroProps) => {
   return (
     <div className="lg:h-screen w-full pt-14">
-      <Particles className="z-0 absolute left-0 top-0 w-full h-full" />
+      <Particles
+        options={options}
+        className="z-0 absolute left-0 top-0 w-full h-full"
+      />
       <div className="container h-full mx-auto flex lg:flex-row flex-col-reverse items-center relative z-10">
         <div className="lg:w-1/2 md:p-10 py-10">
           <h1 className="text-3xl font-semibold mb-10" data-aos="fade-up">
@@ -99,9 +97,12 @@ export default ({}: IntroProps) => {
             </p>
           </div>
           <div className="flex" data-aos="fade-up">
-            <a className="flex items-center bg-primary text-white px-10 py-3 rounded">
+            <Link
+              to="/corporate/about"
+              className="flex items-center bg-primary text-white px-10 py-3 rounded"
+            >
               Hakkımızda <RiArrowRightFill className="ml-1" size={16} />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="lg:w-1/2 md:p-10 py-10" data-aos="fade-up">
