@@ -1,9 +1,13 @@
 import Tilt from "react-parallax-tilt";
 import Particles from "react-tsparticles";
-import { RiArrowRightFill } from "react-icons/ri";
+import { RiArrowRightSLine, RiArrowRightFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import BG from "../assets/images/de.png";
 // Svg
 import MapSvg from "../assets/svgs/map.svg";
+// Data
+import settings from "../data/settings";
+import { Fragment } from "react";
 
 const options = {
   background: {
@@ -76,7 +80,7 @@ const options = {
 };
 
 class IntroProps {}
-export default ({}: IntroProps) => {
+const Intro = ({}: IntroProps) => {
   return (
     <div className="lg:h-screen w-full pt-14">
       <Particles
@@ -86,7 +90,8 @@ export default ({}: IntroProps) => {
       <div className="container h-full mx-auto flex lg:flex-row flex-col-reverse items-center relative z-10">
         <div className="lg:w-1/2 md:p-10 py-10">
           <h1 className="text-3xl font-semibold mb-10" data-aos="fade-up">
-            Stamplast Plastik Üretim Teknolojileri
+            <span className="text-primary">Stamplast</span> Plastik Üretim
+            Teknolojileri
           </h1>
           <div className="text-gray-500 mb-10" data-aos="fade-up">
             <p>
@@ -120,14 +125,49 @@ export default ({}: IntroProps) => {
           >
             <img src={MapSvg} width="90" height="70" alt="map" />
             <div className="ml-4 text-sm">
-              <div className="text-gray-500">
-                Kayapa Çamlık Mahallesi, Kayapa Sanayi Blv,
-              </div>
-              <div className="text-gray-400">16315 Nilüfer/Bursa</div>
+              <div className="text-gray-500">{settings.address_long}</div>
+              <div className="text-gray-400">{settings.address_short}</div>
             </div>
           </a>
         </div>
       </div>
     </div>
   );
+};
+
+class BreadcrumbProps {
+  breadcrumbs?: any[];
+  head?: string;
+}
+const Breadcrumb = ({ breadcrumbs = [], head = "" }: BreadcrumbProps) => {
+  return (
+    <div className="mt-16 pt-2 mb-10">
+      <div
+        className="bg-primary-50 py-6"
+        style={{ backgroundImage: "url(" + BG + ")", backgroundSize: "100%" }}
+      >
+        <div className="container mx-auto">
+          <div className="mb-1 flex items-center text-sm text-gray-600 font-medium">
+            <Link to="/">Ana Sayfa</Link>
+            {breadcrumbs.map((breadcrumb, key: number) => (
+              <Fragment key={key}>
+                <RiArrowRightSLine className="ml-1 mr-1" />
+                <Link to={breadcrumb.to}>{breadcrumb.name}</Link>
+              </Fragment>
+            ))}
+            <RiArrowRightSLine className="ml-1 mr-1" />
+            <Link to="#" className="text-gray-600 opacity-75">
+              {head}
+            </Link>
+          </div>
+          <div className="text-xl text-gray-700 font-semibold">{head}</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default {
+  Intro,
+  Breadcrumb,
 };

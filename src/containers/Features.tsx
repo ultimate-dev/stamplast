@@ -9,8 +9,9 @@ class FeaturesProps {
 }
 export default ({ items = [] }: FeaturesProps) => {
   return (
-    <section className="relative section pt-16 my-20">
-      <div className="absolute z-0 left-0 top-1/2 bg-primary-50 w-96 h-96 rounded-3xl transform rotate-45 -translate-x-1/2" />
+    <section className="relative section py-16 overflow-hidden">
+      <div className="absolute z-0 left-0 top-1/2 -mt-48 bg-primary-50 w-96 h-96 rounded-3xl transform rotate-45 -translate-x-1/2" />
+
       <div className="container mx-auto z-10">
         <div className="flex items-start mb-10 flex-wrap" data-aos="fade-up">
           <h5 className="text-2xl font-semibold pr-10 w-full lg:w-2/5">

@@ -8,7 +8,7 @@ class ProductsProps {
 }
 export default ({ items = [] }: ProductsProps) => {
   return (
-    <section className="relative section pt-16 my-20">
+    <section className="relative section py-16">
       <div className="container z-10 mx-auto">
         <div className="flex items-center mb-5" data-aos="fade-up">
           <h5 className="text-2xl font-semibold mr-5">Ürünler</h5>

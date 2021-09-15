@@ -13,8 +13,8 @@ export default [
         to: "/corporate/about",
       },
       {
-        name: "Misyon, Vizyon ve Hedefler",
-        to: "/corporate/mission-vision-goals",
+        name: "Politikamız",
+        to: "/corporate/our-policy",
       },
     ],
   },

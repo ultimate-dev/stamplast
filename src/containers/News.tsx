@@ -8,7 +8,7 @@ class NewsProps {
 }
 export default ({ items = [] }: NewsProps) => {
   return (
-    <section className="section bg-primary-50 py-16 my-20">
+    <section className="relative section py-16 bg-primary-50">
       <div className="container mx-auto">
         <div className="flex items-center mb-5" data-aos="fade-up">
           <h5 className="text-2xl font-semibold mr-5">Haberler</h5>

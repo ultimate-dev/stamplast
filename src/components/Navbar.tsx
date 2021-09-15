@@ -21,7 +21,7 @@ export default ({}: NavbarProps) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 50) {
+        if (window.pageYOffset > 20) {
           setScroll(true);
         } else {
           setScroll(false);
@@ -154,7 +154,7 @@ const NavItem = ({
                   <NavLink
                     to={item.to}
                     onClick={() => setNav({ open: false })}
-                    className="flex items-center text-sm text-gray-600 font-medium px-8 py-2 opacity-80 hover:opacity-100 hover:text-primary"
+                    className="flex items-center text-sm text-gray-600 font-medium px-8 py-2 lg:pr-20 opacity-80 hover:opacity-100 hover:text-primary"
                     activeClassName="text-primary"
                     exact={true}
                   >

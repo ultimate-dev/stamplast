@@ -11,6 +11,10 @@ const locales = [
     value: "en",
   },
   {
+    flag: "https://cdn-icons-png.flaticon.com/512/299/299786.png",
+    value: "de",
+  },
+  {
     flag: "https://cdn-icons-png.flaticon.com/512/299/299935.png",
     value: "it",
   },

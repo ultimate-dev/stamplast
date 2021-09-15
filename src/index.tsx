@@ -8,6 +8,7 @@ import store from "./store/store";
 // Styles
 import "animate.css";
 import "aos/dist/aos.css";
+import "react-multi-carousel/lib/styles.css";
 import "./assets/css/output.css";
 import "./assets/css/styles.css";
 

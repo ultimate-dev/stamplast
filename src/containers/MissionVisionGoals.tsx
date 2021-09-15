@@ -9,7 +9,7 @@ const tap = { scale: 0.95, rotate: 5 };
 class MissionVisionGoalsProps {}
 export default ({}: MissionVisionGoalsProps) => {
   return (
-    <section className="relative section my-20">
+    <section className="relative section py-16">
       <div className="container mx-auto flex flex-wrap self-stretch">
         <div className="md:w-1/3 p-3" data-aos="fade-up">
           <motion.div
