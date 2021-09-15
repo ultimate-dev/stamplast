@@ -8,9 +8,7 @@ export default function Home() {
     <Fragment>
       <SEO title="İletişim" />
       <main>
-        <Header.Breadcrumb
-          head="İletişim"
-        />
+        <Header.Breadcrumb head="İletişim" />
       </main>
     </Fragment>
   );

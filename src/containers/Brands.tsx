@@ -27,20 +27,18 @@ const responsive = {
 
 export default ({ items = [] }: BrandsProps) => {
   return (
-    <section className="relative section bg-gray-50" data-aos="fade-up">
-      <div className="w-full">
-        <CarouselResp responsive={responsive} arrows={false} infinite autoPlay>
-          {items.map((item, key: number) => (
-            <div key={key} className="p-5 py-8">
-              <img
-                draggable={false}
-                src={item.image}
-                className="w-full h-16 object-contain filter opacity-50"
-              />
-            </div>
-          ))}
-        </CarouselResp>
-      </div>
-    </section>
+    <div className="w-full" data-aos="fade-up">
+      <CarouselResp responsive={responsive} arrows={false} infinite autoPlay>
+        {items.map((item, key: number) => (
+          <div key={key} className="p-5 py-8">
+            <img
+              draggable={false}
+              src={item.image}
+              className="w-full h-16 object-contain filter opacity-50"
+            />
+          </div>
+        ))}
+      </CarouselResp>
+    </div>
   );
 };

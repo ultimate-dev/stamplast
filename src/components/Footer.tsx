@@ -8,8 +8,8 @@ import {
   RiYoutubeFill,
 } from "react-icons/ri";
 import { Link } from "react-router-dom";
-// Container
-import GoogleMap from "../containers/GoogleMap";
+// Components
+import GoogleMap from "./GoogleMap";
 // LogoImg
 import LogoImg from "../assets/images/logo.png";
 // Data
