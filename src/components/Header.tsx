@@ -82,7 +82,7 @@ const options = {
 class IntroProps {}
 const Intro = ({}: IntroProps) => {
   return (
-    <div className="lg:h-screen w-full pt-14">
+    <div className="lg:h-screen w-full pt-14" data-aos="fade-down">
       <Particles
         options={options}
         className="z-0 absolute left-0 top-0 w-full h-full"
@@ -141,10 +141,11 @@ class BreadcrumbProps {
 }
 const Breadcrumb = ({ breadcrumbs = [], head = "" }: BreadcrumbProps) => {
   return (
-    <div className="mt-16 lg:pt-2 mb-10">
+    <div className="mt-16 lg:pt-2 mb-10 bg-white">
       <div
         className="bg-primary-50 py-6"
         style={{ backgroundImage: "url(" + BG + ")", backgroundSize: "100%" }}
+        data-aos="fade-right"
       >
         <div className="container mx-auto">
           <div className="mb-1 flex items-center text-sm text-gray-600 font-medium">

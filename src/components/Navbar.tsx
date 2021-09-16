@@ -33,6 +33,7 @@ export default ({}: NavbarProps) => {
   useEffect(() => {
     setNav({ open: false });
   }, [location.pathname]);
+
   return (
     <nav
       className={
@@ -46,7 +47,7 @@ export default ({}: NavbarProps) => {
           "w-full mx-auto flex items-center justify-between h-full p-2 md:px-6"
         }
       >
-        <div>
+        <div data-aos="fade-down-right">
           <Link to="/">
             <img
               src={LogoImg}
@@ -57,7 +58,10 @@ export default ({}: NavbarProps) => {
             />
           </Link>
         </div>
-        <div className="lg:h-auto h-screen lg:w-auto w-60 lg:relative absolute top-0 -right-60 lg:bg-transparent bg-white lg:shadow-none shadow lg:right-0">
+        <div
+          className="lg:h-auto h-screen lg:w-auto w-60 lg:relative absolute top-0 -right-60 lg:bg-transparent bg-white lg:shadow-none shadow lg:right-0"
+          data-aos="fade-down"
+        >
           <div className="flex items-center justify-center h-full">
             <div className="flex lg:flex-row flex-col items-center w-full">
               {navs.map((nav, key: number) => (
@@ -66,7 +70,7 @@ export default ({}: NavbarProps) => {
             </div>
           </div>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center" data-aos="fade-down-left">
           <a href={"tel:" + settings.phone} className="flex items-center">
             <RiPhoneFill className="text-primary text-xl md:text-2xl" />
             <div className="text-right">
