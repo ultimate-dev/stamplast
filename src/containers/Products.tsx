@@ -4,21 +4,14 @@ import { RiArrowRightFill } from "react-icons/ri";
 import ProductModel from "../models/product";
 
 class ProductsProps {
-  data?: { items: ProductModel[]; desc: string };
+  data?: ProductModel[];
 }
-export default ({ data = { items: [], desc: "" } }: ProductsProps) => {
+export default ({ data = [] }: ProductsProps) => {
   return (
     <div className="container z-10 mx-auto">
-      <p
-        className="text-gray-500 mb-10 w-full md:w-2/3"
-        data-aos="fade-up"
-        data-aos-delay={100}
-      >
-        {data.desc}
-      </p>
       <div className="flex flex-wrap self-stretch">
-        {data.items &&
-          data.items.map((item, key) => (
+        {data &&
+          data.map((item, key) => (
             <div
               key={key}
               className="lg:w-1/4 md:w-1/2 w-full md:px-3 py-3 self-stretch"

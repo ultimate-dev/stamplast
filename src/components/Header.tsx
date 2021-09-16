@@ -141,7 +141,7 @@ class BreadcrumbProps {
 }
 const Breadcrumb = ({ breadcrumbs = [], head = "" }: BreadcrumbProps) => {
   return (
-    <div className="mt-16 pt-2 mb-10">
+    <div className="mt-16 lg:pt-2 mb-10">
       <div
         className="bg-primary-50 py-6"
         style={{ backgroundImage: "url(" + BG + ")", backgroundSize: "100%" }}

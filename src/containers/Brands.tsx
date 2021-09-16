@@ -25,7 +25,7 @@ class BrandsProps {
 }
 export default ({ data = [] }: BrandsProps) => {
   return (
-    <div className="w-full" data-aos="fade-up">
+    <div className="w-full">
       <CarouselResp responsive={responsive} arrows={false} infinite autoPlay>
         {data.map((item, key: number) => (
           <div key={key} className="p-5 py-8">

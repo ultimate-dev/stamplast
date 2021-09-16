@@ -6,6 +6,7 @@ import AOS from "aos";
 // Components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import RouterScrollReset from "../components/RouterScrollReset";
 // Moment
 import moment from "moment";
 import "moment/locale/tr";
@@ -31,27 +32,29 @@ const App = () => {
   });
 
   return (
-    <Fragment>
-      <Navbar />
-      <div
-        className={
-          "relative h-screen w-full transition-all ease-linear duration-200 transform" +
-          (open ? " -translate-x-60" : " -translate-x-0")
-        }
-      >
-        <Switch>
-          {routes.map((route, key: number) => (
-            <Route
-              key={key}
-              path={route.path}
-              render={(props: any) => <route.page {...props} />}
-              exact={route.exact}
-            />
-          ))}
-        </Switch>
-        <Footer />
-      </div>
-    </Fragment>
+    <RouterScrollReset>
+      <Fragment>
+        <Navbar />
+        <div
+          className={
+            "relative h-screen w-full transition-all ease-linear duration-200 transform" +
+            (open ? " -translate-x-60" : " -translate-x-0")
+          }
+        >
+          <Switch>
+            {routes.map((route, key: number) => (
+              <Route
+                key={key}
+                path={route.path}
+                render={(props: any) => <route.page {...props} />}
+                exact={route.exact}
+              />
+            ))}
+          </Switch>
+          <Footer />
+        </div>
+      </Fragment>
+    </RouterScrollReset>
   );
 };
 export default App;

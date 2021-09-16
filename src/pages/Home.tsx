@@ -17,6 +17,7 @@ import productsData from "../data/products";
 import newsData from "../data/news";
 import brandsData from "../data/brands";
 import missionVisionGoalsData from "../data/missionVisionGoals";
+import Description from "../containers/Description";
 
 export default function Home() {
   let features = featuresData.slice(0, 6);
@@ -31,10 +32,10 @@ export default function Home() {
       <main>
         <Header.Intro />
 
-        <section className="relative section py-16">
-          <MissionVisionGoals data={missionVisionGoalsData} />
+        <section className="relative section py-16" data-aos="fade-up">
+          <MissionVisionGoals data={missionVisionGoals} />
         </section>
-        <section className="relative section py-16">
+        <section className="relative section py-16" data-aos="fade-up">
           <BackBox align="left" color="primary-50" size={96} />
           <Head.Desc
             head={
@@ -56,26 +57,28 @@ export default function Home() {
           <Features data={features} />
         </section>
 
-        <section className="relative section py-16">
+        <section className="relative section py-16" data-aos="fade-up">
           <Head.Section head="Ürünler" />
-          <Products
-            data={{
-              items: products,
-              desc: " Stamplast müşterilerini yüksek kalitede ve geniş bir ürün yelpazesiyle buluşturmak hedefiyle yola çıkmıştır. En ileri teknolojilerle ve en sıkı kalite kontrol prosedürleriyle üretilen ürünler; araç aydınlatma, ayna sistemlerinde ve araç iç ve dış trim parçaları olarak kullanılmaktadır.",
-            }}
-          />
+          <Description data="Stamplast müşterilerini yüksek kalitede ve geniş bir ürün yelpazesiyle buluşturmak hedefiyle yola çıkmıştır. En ileri teknolojilerle ve en sıkı kalite kontrol prosedürleriyle üretilen ürünler; araç aydınlatma, ayna sistemlerinde ve araç iç ve dış trim parçaları olarak kullanılmaktadır." />
+          <Products data={products} />
         </section>
 
-        <section className="relative section py-16 bg-primary-50">
+        <section
+          className="relative section py-16 bg-primary-50"
+          data-aos="fade-up"
+        >
           <Head.Section head="Haberler" />
           <News data={news} />
         </section>
 
-        <section className="relative section bg-gray-50">
+        <section className="relative section bg-gray-50" data-aos="fade-up">
           <Brands data={brands} />
         </section>
 
-        <section className="relative section py-16 overflow-hidden">
+        <section
+          className="relative section py-16 overflow-hidden"
+          data-aos="fade-up"
+        >
           <BackBox align="right" color="primary-50" size={80} />
           <Head.Section head="İletişim" />
           <Contact />
