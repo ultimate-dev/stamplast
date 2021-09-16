@@ -11,7 +11,7 @@ import settings from "../data/settings";
 import Head from "../components/Head";
 import Description from "../containers/Description";
 
-export default function Home() {
+export default () => {
   return (
     <Fragment>
       <SEO title="İletişim" />
@@ -33,4 +33,4 @@ export default function Home() {
       </main>
     </Fragment>
   );
-}
+};

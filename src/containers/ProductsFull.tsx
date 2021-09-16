@@ -1,7 +1,5 @@
-import { RiArrowRightFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
 // Components
-import ProductBox from "../components/Products/Box";
+import ProductItem from "../components/Products/Item";
 // Models
 import ProductModel from "../models/product";
 
@@ -20,7 +18,7 @@ export default ({ data = [] }: ProductsProps) => {
               data-aos="fade-up"
               data-aos-delay={200}
             >
-              <ProductBox {...item} />
+              <ProductItem {...item} />
             </div>
           ))}
       </div>

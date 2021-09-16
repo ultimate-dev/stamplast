@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import SEO from "../components/SEO";
 import Head from "../components/Head";
 import BackBox from "../components/BackBox";
+import ViewLink from "../components/ViewLink";
 // Containers
 import Brands from "../containers/Brands";
 import MissionVisionGoals from "../containers/MissionVisionGoals";
@@ -11,15 +12,15 @@ import Features from "../containers/Features";
 import Products from "../containers/Products";
 import News from "../containers/News";
 import Contact from "../containers/Contact";
+import Description from "../containers/Description";
 // Data
 import featuresData from "../data/features";
 import productsData from "../data/products";
 import newsData from "../data/news";
 import brandsData from "../data/brands";
 import missionVisionGoalsData from "../data/missionVisionGoals";
-import Description from "../containers/Description";
 
-export default function Home() {
+export default () => {
   let features = featuresData.slice(0, 6);
   let products = productsData.slice(0, 4);
   let news = newsData.slice(0, 4);
@@ -55,12 +56,14 @@ export default function Home() {
             hedeflemektedir."
           />
           <Features data={features} />
+          <ViewLink to="/features" />
         </section>
 
         <section className="relative section py-16" data-aos="fade-up">
           <Head.Section head="Ürünler" />
           <Description data="Stamplast müşterilerini yüksek kalitede ve geniş bir ürün yelpazesiyle buluşturmak hedefiyle yola çıkmıştır. En ileri teknolojilerle ve en sıkı kalite kontrol prosedürleriyle üretilen ürünler; araç aydınlatma, ayna sistemlerinde ve araç iç ve dış trim parçaları olarak kullanılmaktadır." />
           <Products data={products} />
+          <ViewLink to="/products" />
         </section>
 
         <section
@@ -69,6 +72,7 @@ export default function Home() {
         >
           <Head.Section head="Haberler" />
           <News data={news} />
+          <ViewLink to="/news" />
         </section>
 
         <section className="relative section bg-gray-50" data-aos="fade-up">
@@ -86,4 +90,4 @@ export default function Home() {
       </main>
     </Fragment>
   );
-}
+};
