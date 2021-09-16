@@ -161,7 +161,7 @@ const Breadcrumb = ({ breadcrumbs = [], head = "" }: BreadcrumbProps) => {
               {head}
             </Link>
           </div>
-          <div className="text-xl text-gray-700 font-semibold">{head}</div>
+          <div className="text-2xl text-gray-700 font-semibold">{head}</div>
         </div>
       </div>
     </div>

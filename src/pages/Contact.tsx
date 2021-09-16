@@ -20,7 +20,7 @@ export default () => {
 
         <section className="relative section pt-16" data-aos="fade-up">
           <Head.Section head="Bize Ulaşın" />
-          <Description data="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
+          <Description block data="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." />
           <ContactInfos data={settings} />
         </section>
         <section

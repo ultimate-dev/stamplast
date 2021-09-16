@@ -19,7 +19,7 @@ import navs from "../source/navs";
 
 export default () => {
   return (
-    <footer className="">
+    <footer className="mt-16">
       <div className="container mx-auto z-10">
         <div className="py-3" data-aos="fade-up">
           <GoogleMap lat={settings.lat} lng={settings.lng} />

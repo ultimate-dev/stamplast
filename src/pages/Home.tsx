@@ -41,7 +41,7 @@ export default () => {
           <Head.Desc
             head={
               <>
-                Plastik Üretim Teknoloji Hizmetleri,
+                İyi şeyler her iş hakkıyla yapılınca ortaya çıkar,
                 <span
                   className="text-primary mx-2"
                   data-aos="zoom-in"
