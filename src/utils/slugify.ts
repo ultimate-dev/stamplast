@@ -1,7 +1,11 @@
 import slugify from "slugify";
-export default (text: string) => {
-  return slugify(String(text), {
-    lower: true,
-    locale: "tr",
-  }).replace(/[^\w-]+/g, "");
+export default (text?: string, id?: number) => {
+  return (
+    slugify(String(text), {
+      lower: true,
+      locale: "tr",
+    }).replace(/[^\w-]+/g, "") +
+    "-" +
+    id
+  );
 };

@@ -1,4 +1,5 @@
 import NewsBox from "../components/News/Box";
+import { Link } from "react-router-dom";
 import { RiArrowRightFill } from "react-icons/ri";
 // Models
 import NewsModel from "../models/news";
@@ -27,9 +28,12 @@ export default ({ data = [] }: NewsProps) => {
         data-aos="fade-up"
         data-aos-delay={200}
       >
-        <a className="text-sm mx-5 text-gray-500 underline flex items-center">
+        <Link
+          to="/news"
+          className="text-sm mx-5 text-gray-500 underline flex items-center"
+        >
           Tümünü Görüntüle <RiArrowRightFill className="ml-1" size={16} />
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import Tilt from "react-parallax-tilt";
+import { Link } from "react-router-dom";
 // Utils
 import slugify from "../../utils/slugify";
 // Models
@@ -8,7 +9,10 @@ import { RiArrowRightFill } from "react-icons/ri";
 export default ({ id, name, image, desc }: ProductModel) => {
   return (
     <Tilt>
-      <a className="bg-white shadow h-full p-2 flex flex-col cursor-pointer rounded-tl-3xl rounded-br-3xl rounded overflow-hidden">
+      <Link
+        to={"/products/" + slugify(name, id)}
+        className="bg-white shadow h-full p-2 flex flex-col cursor-pointer rounded-tl-3xl rounded-br-3xl rounded overflow-hidden"
+      >
         <div className="relative h-48 w-full rounded-tl-3xl rounded overflow-hidden">
           <img className="h-full w-full object-cover" src={image} />
           <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-t from-gray-900 flex flex-col justify-end">
@@ -24,7 +28,7 @@ export default ({ id, name, image, desc }: ProductModel) => {
             </a>
           </div>
         </div>
-      </a>
+      </Link>
     </Tilt>
   );
 };
