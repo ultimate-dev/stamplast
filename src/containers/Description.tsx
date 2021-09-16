@@ -1,3 +1,5 @@
+import htmlParser from "html-react-parser";
+
 class DescriptionProps {
   data?: string;
   block?: boolean;
@@ -10,7 +12,7 @@ export default ({ data = "", block = false }: DescriptionProps) => {
           "text-gray-500 mb-14 w-full" + (block ? "  md:w-full" : " md:w-2/3")
         }
       >
-        {data}
+        {htmlParser(data)}
       </p>
     </div>
   );
