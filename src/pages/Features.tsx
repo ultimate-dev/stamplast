@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import BackBox from "../components/BackBox";
 // Components
 import Header from "../components/Header";
 import SEO from "../components/SEO";
 import Head from "../components/Head";
+import BackBox from "../components/BackBox";
 // Containers
 import Features from "../containers/Features";
 import Description from "../containers/Description";
