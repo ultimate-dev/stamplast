@@ -3,7 +3,7 @@ import {
   RiFacebookFill,
   RiInstagramFill,
   RiLinkedinFill,
-  RiMapPin2Line,
+  RiMapPinFill,
   RiTwitterFill,
   RiYoutubeFill,
 } from "react-icons/ri";
@@ -71,7 +71,7 @@ export default () => {
             target="_blank"
             className="flex items-center py-2"
           >
-            <RiMapPin2Line size={24} className="text-primary w-10" />
+            <RiMapPinFill size={24} className="text-primary w-10" />
             <div className="text-gray-500 text-sm ml-2">
               {settings.address_long + " - " + settings.address_short}
             </div>

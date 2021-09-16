@@ -4,14 +4,14 @@ import { RiArrowRightFill } from "react-icons/ri";
 import NewsModel from "../models/news";
 
 class NewsProps {
-  items?: NewsModel[];
+  data?: NewsModel[];
 }
-export default ({ items = [] }: NewsProps) => {
+export default ({ data = [] }: NewsProps) => {
   return (
     <div className="container mx-auto">
       <div className="flex flex-wrap self-stretch">
-        {items &&
-          items.map((item, key) => (
+        {data &&
+          data.map((item, key) => (
             <div
               key={key}
               className="lg:w-1/4 md:w-1/2 w-full md:px-3 py-3"

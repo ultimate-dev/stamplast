@@ -2,10 +2,6 @@
 import BrandModel from "../models/brand";
 import CarouselResp from "react-multi-carousel";
 
-class BrandsProps {
-  items?: BrandModel[];
-}
-
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -24,12 +20,14 @@ const responsive = {
     items: 2,
   },
 };
-
-export default ({ items = [] }: BrandsProps) => {
+class BrandsProps {
+  data?: BrandModel[];
+}
+export default ({ data = [] }: BrandsProps) => {
   return (
     <div className="w-full" data-aos="fade-up">
       <CarouselResp responsive={responsive} arrows={false} infinite autoPlay>
-        {items.map((item, key: number) => (
+        {data.map((item, key: number) => (
           <div key={key} className="p-5 py-8">
             <img
               draggable={false}

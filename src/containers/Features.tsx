@@ -5,14 +5,14 @@ import FeatureBox from "../components/Features/Box";
 import FeatureModel from "../models/feature";
 
 class FeaturesProps {
-  items?: FeatureModel[];
+  data?: FeatureModel[];
 }
-export default ({ items = [] }: FeaturesProps) => {
+export default ({ data = [] }: FeaturesProps) => {
   return (
     <div className="container mx-auto z-10">
       <div className="flex items-center flex-wrap">
-        {items &&
-          items.map((item, key) => (
+        {data &&
+          data.map((item, key) => (
             <div
               className="lg:w-1/3 md:w-1/2 w-full"
               data-aos="fade-up"

@@ -4,9 +4,9 @@ import { RiArrowRightFill } from "react-icons/ri";
 import ProductModel from "../models/product";
 
 class ProductsProps {
-  items?: ProductModel[];
+  data?: { items: ProductModel[]; desc: string };
 }
-export default ({ items = [] }: ProductsProps) => {
+export default ({ data = { items: [], desc: "" } }: ProductsProps) => {
   return (
     <div className="container z-10 mx-auto">
       <p
@@ -14,14 +14,11 @@ export default ({ items = [] }: ProductsProps) => {
         data-aos="fade-up"
         data-aos-delay={100}
       >
-        Stamplast müşterilerini yüksek kalitede ve geniş bir ürün yelpazesiyle
-        buluşturmak hedefiyle yola çıkmıştır. En ileri teknolojilerle ve en sıkı
-        kalite kontrol prosedürleriyle üretilen ürünler; araç aydınlatma, ayna
-        sistemlerinde ve araç iç ve dış trim parçaları olarak kullanılmaktadır.
+        {data.desc}
       </p>
       <div className="flex flex-wrap self-stretch">
-        {items &&
-          items.map((item, key) => (
+        {data.items &&
+          data.items.map((item, key) => (
             <div
               key={key}
               className="lg:w-1/4 md:w-1/2 w-full md:px-3 py-3 self-stretch"
