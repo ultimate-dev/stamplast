@@ -5,7 +5,6 @@ import htmlParser from "html-react-parser";
 import Header from "../components/Header";
 import SEO from "../components/SEO";
 import BackBox from "../components/BackBox";
-import Head from "../components/Head";
 // Data
 import productsData from "../data/products";
 
@@ -36,14 +35,20 @@ export default function Home() {
                 <img
                   src={product.image}
                   className="w-full object-contain rounded shadow"
+                  data-aos="fade-up"
                 />
-                <div className="w-full text-center text-gray-500 mt-5">
+                <div
+                  className="w-full text-center text-gray-500 mt-5"
+                  data-aos="fade-up"
+                >
                   {product.desc}
                 </div>
               </div>
               <div className="lg:w-1/2 w-full lg:pt-16 pb-16 md:px-5">
-                <h4 className="text-2xl font-semibold mb-8">{product.name}</h4>
-                <div>{htmlParser(product.content)}</div>
+                <h4 className="text-2xl font-semibold mb-8" data-aos="fade-up">
+                  {product.name}
+                </h4>
+                <div data-aos="fade-up">{htmlParser(product.content)}</div>
               </div>
             </div>
           </section>
