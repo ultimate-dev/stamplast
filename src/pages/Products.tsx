@@ -3,6 +3,8 @@ import { Fragment } from "react";
 import Header from "../components/Header";
 import Head from "../components/Head";
 import SEO from "../components/SEO";
+// Images
+import GamImg from "../assets/images/gam.webp"
 // Containers
 import Products from "../containers/Products";
 import Description from "../containers/Description";
@@ -28,6 +30,9 @@ export default () => {
 
           <Products data={products} />
         </section>
+        <section className="relative section py-16" data-aos="fade-up">
+          <img src={GamImg}/>
+          </section>
       </main>
     </Fragment>
   );

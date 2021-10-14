@@ -15,11 +15,11 @@ export default ({ data = [] }: FeaturesProps) => {
         {data &&
           data.map((item, key) => (
             <div
-              className="lg:w-1/3 md:w-1/2 w-full"
+              className="w-full"
               data-aos="fade-up"
               data-aos-delay={200}
             >
-              <FeatureBox key={key} {...item} />
+              <FeatureBox key={key} {...item} index={key} />
             </div>
           ))}
       </div>

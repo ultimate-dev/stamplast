@@ -4,6 +4,14 @@ import { NavLink, Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Menu, Transition } from "@headlessui/react";
 import LocaleSelect from "./LocaleSelect";
+import {
+  RiFacebookFill,
+  RiInstagramFill,
+  RiLinkedinFill,
+  RiMapPinFill,
+  RiTwitterFill,
+  RiYoutubeFill,
+} from "react-icons/ri";
 // LogoImg
 import LogoImg from "../assets/images/logo.png";
 // Source
@@ -53,7 +61,7 @@ export default ({}: NavbarProps) => {
               src={LogoImg}
               className={
                 "object-contain transition-all ease-linear duration-200" +
-                (scroll ? " lg:h-12 h-10" : " lg:h-14 h-12")
+                (scroll ? " mx-2 lg:h-18 h-14" : " mx-6 lg:h-20 h-16")
               }
             />
           </Link>
@@ -71,15 +79,33 @@ export default ({}: NavbarProps) => {
           </div>
         </div>
         <div className="flex items-center" data-aos="fade-down-left">
-          <a href={"tel:" + settings.phone} className="flex items-center">
-            <RiPhoneFill className="text-primary text-xl md:text-2xl" />
-            <div className="text-right">
-              <div className="font-medium text-xs md:text-sm">
-                {settings.phone}
-              </div>
-              <div className="text-gray-500 text-xs">Bizi Ara</div>
-            </div>
-          </a>
+          <div className="flex mb-1">
+            {settings.facebook && (
+              <a href={settings.facebook} className="text-primary mx-1">
+                <RiFacebookFill size={18} />
+              </a>
+            )}
+            {settings.twitter && (
+              <a href={settings.twitter} className="text-primary mx-1">
+                <RiTwitterFill size={18} />
+              </a>
+            )}
+            {settings.linkedin && (
+              <a href={settings.linkedin} className="text-primary mx-1">
+                <RiLinkedinFill size={18} />
+              </a>
+            )}
+            {settings.instagram && (
+              <a href={settings.instagram} className="text-primary mx-1">
+                <RiInstagramFill size={18} />
+              </a>
+            )}
+            {settings.youtube && (
+              <a href={settings.youtube} className="text-primary mx-1">
+                <RiYoutubeFill size={18} />
+              </a>
+            )}
+          </div>
           <div className="ml-3">
             <LocaleSelect />
           </div>
