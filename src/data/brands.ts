@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     image:
-      "https://cdn.freelogovectors.net/wp-content/uploads/2016/12/audi-logo.png",
+      "https://www.freepnglogos.com/uploads/audi-logo-2.png",
   },
   {
     id: 2,
