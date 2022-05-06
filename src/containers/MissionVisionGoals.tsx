@@ -3,10 +3,6 @@ import { motion } from "framer-motion";
 import MissionSvg from "../assets/svgs/mission.svg";
 import VisionSvg from "../assets/svgs/vision.svg";
 import GoalsSvg from "../assets/svgs/goals.svg";
-// Images
-import MissionImg from "../assets/images/mission.webp";
-import VisionImg from "../assets/images/vision.webp";
-import GoalsImg from "../assets/images/goals.webp";
 // Model
 import MissionVisionGoals from "../models/missionVisionGoals";
 
@@ -25,12 +21,7 @@ export default ({ data = {} }: MissionVisionGoalsProps) => {
           className="rounded shadow p-6 h-full"
         >
           <div className="flex justify-center">
-            <img
-              src={MissionImg}
-              width="100%"
-              height="180"
-              className="rounded mb-4"
-            />
+            <img src={MissionSvg} width="180" height="180" />
           </div>
           <h4 className="flex justify-center items-baseline text-xl font-medium">
             Misyon
@@ -47,12 +38,7 @@ export default ({ data = {} }: MissionVisionGoalsProps) => {
           className="rounded shadow p-6 h-full"
         >
           <div className="flex justify-center">
-            <img
-              src={VisionImg}
-              width="100%"
-              height="180"
-              className="rounded mb-4"
-            />
+            <img src={VisionSvg} width="180" height="180" />
           </div>
           <h4 className="flex justify-center items-baseline text-xl font-medium">
             Vizyon
@@ -69,12 +55,7 @@ export default ({ data = {} }: MissionVisionGoalsProps) => {
           className="rounded shadow p-6 h-full"
         >
           <div className="flex justify-center">
-            <img
-              src={GoalsImg}
-              width="100%"
-              height="180"
-              className="rounded mb-4"
-            />
+            <img src={GoalsSvg} width="180" height="180" />
           </div>
           <h4 className="flex justify-center items-baseline text-xl font-medium">
             Hedefler

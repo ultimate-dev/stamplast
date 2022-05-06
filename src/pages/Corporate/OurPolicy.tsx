@@ -13,9 +13,24 @@ export default function Home() {
 
   const policys = [
     {
-      title: "KALİTE POLİTİKAMIZ",
+      title: "KALİTE",
       content:
-        "<p>Stamplast  Plastik Sanayi Hizmetleri olarak; sürekli ve kalıcı başarının yönetim sistemlerinin uygulanması, sürdürülmesi ve sürekli iyileştirilmesi ile sağlanacağına inanıyoruz.</p><br/><b>Bu nedenle STAMPLAST olarak;</b><br/><br/><ul><li><b>1- </b>Sürekli İyileştirme çalışma felsefemizdir.</li><li><b>2- </b>Tüm Ürünlerimizde sıfır hata en büyük hedefimizdir.</li><li><b>3- </b>İş ortaklarımıza Yüksek kalite ve en uygun fiyatla mal temin edebilmek için, üretim, satın alma ve diğer süreçlerimizi daima dinamik tutarız.</li><li><b>4- </b>Sevkiyat performansı hedefimiz müşterilerimizin beklentisi ile %100 uyumdur.</li><li><b>5- </b>Firmamızın üst yönetiminden aldığımız yıllık ve uzun vadeli hedefleri gerçekleştirmek için var gücümüzle çalışırız.</li><li><b>6- </b>Bütün bunları gerçekleştirirken;</li></ul><br/><p>Yönetimimiz, yukarıda yazılan politikaların eksiksiz olarak uygulanması için gerekli olan tüm destek ve çabayı göstereceğini tüm müşterilerine taahhüt eder.</p><br/><br/><br/><strong>Genel Müdür</strong>",
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+    },
+    {
+      title: "ÜRETİM",
+      content:
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+    },
+    {
+      title: "MÜŞTERİ",
+      content:
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+    },
+    {
+      title: "TEDARİKÇİ",
+      content:
+        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
     },
   ];
 
@@ -38,7 +53,7 @@ export default function Home() {
               policys.map((item, key: number) => (
                 <div
                   key={key}
-                  className="w-full p-5"
+                  className="md:w-1/2 w-full p-5"
                   data-aos="fade-up"
                 >
                   <div className="bg-white shadow rounded px-8 py-6">

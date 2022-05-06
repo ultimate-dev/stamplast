@@ -16,7 +16,7 @@ export default ({ data = [] }: ProductsProps) => {
           data.map((item, key) => (
             <div
               key={key}
-              className="lg:w-1/3 md:w-1/2 w-full md:px-3 py-3 self-stretch"
+              className="lg:w-1/4 md:w-1/2 w-full md:px-3 py-3 self-stretch"
               data-aos="fade-up"
               data-aos-delay={200}
             >

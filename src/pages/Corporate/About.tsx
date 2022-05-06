@@ -9,8 +9,9 @@ export default function Home() {
   const about = {
     image:
       "https://static.wixstatic.com/media/05e093_5dcb3071d1e14fa199b951ef947a707c~mv2.jpg/v1/fill/w_623,h_980,al_c,q_85,usm_0.66_1.00_0.01/05e093_5dcb3071d1e14fa199b951ef947a707c~mv2.webp",
+    head: "Hem Küresel Hem Küçük Ölçekli Bir Tedarikçi",
     content:
-      "<b>Hem Küresel Hem Küçük Ölçekli Bir Tedarikçi</b><br/><p>Eylül 2020  tarihinde plastik parça üretmek üzere Bursa Kayapa Organize sanayinde  kurulan şirketimiz Stamplast Plastik Üretim Teknolojileri, başta otomotiv olmak üzere tüm iş kollarında iş ortaklarına hizmet vermeyi hedeflemektedir. Önümüzdeki yıllarda teknoloji, üretim, kalite, dizayn ve pazarlama konularında yatırımlarına hız kazandıracaktır.</p><br/><p>Plastik parça üretim sektörünün genç ve dinamik firmalarındandır. Kurucuların Plastik Parça üretim sektöründeki tecrübeleri, teknik eğitimleri ve birikimleri sayesinde müşterilerine kaliteli hizmet, satış öncesi ve satış sonrası teknik destek sağlamaktadır.</p><br/><p>Kaliteli üretim anlayışı ile, gelişmesine devam eden Stamplast, tasarımdan üretime kadar olan tüm aşamalarda yalın üretim sistemleri, proje yönetimi gibi müşteri memnuniyet odaklı bir vizyona sahiptir.</p><br/><p>Gelecek yıllarda sektörün en güçlü ve prestijli firmalardan biri olmayı hedefleyen Stamplast, iş ortaklarına en  iyi hizmeti vermeyi hedeflemektedir.</p>",
+      "<p>Eylül 2020  tarihinde plastik parça üretmek üzere Bursa Kayapa Organize sanayinde  kurulan şirketimiz Stamplast Plastik Üretim Teknolojileri, başta otomotiv olmak üzere tüm iş kollarında iş ortaklarına hizmet vermeyi hedeflemektedir. Önümüzdeki yıllarda teknoloji, üretim, kalite, dizayn ve pazarlama konularında yatırımlarına hız kazandıracaktır.</p><br/><p>Plastik parça üretim sektörünün genç ve dinamik firmalarındandır. Kurucuların Plastik Parça üretim sektöründeki tecrübeleri, teknik eğitimleri ve birikimleri sayesinde müşterilerine kaliteli hizmet, satış öncesi ve satış sonrası teknik destek sağlamaktadır.</p><br/><p>Kaliteli üretim anlayışı ile, gelişmesine devam eden Stamplast, tasarımdan üretime kadar olan tüm aşamalarda yalın üretim sistemleri, proje yönetimi gibi müşteri memnuniyet odaklı bir vizyona sahiptir.</p><br/><p>Gelecek yıllarda sektörün en güçlü ve prestijli firmalardan biri olmayı hedefleyen Stamplast, iş ortaklarına en  iyi hizmeti vermeyi hedeflemektedir.</p>",
   };
 
   return (
@@ -28,11 +29,9 @@ export default function Home() {
         >
           <div className="container relative z-10 mx-auto flex flex-wrap lg:flex-row flex-col-reverse">
             <div className="lg:w-1/2 w-full py-16 md:px-5">
-              <h4 className="text-center mb-8">
-                <div className="text-3xl font-semibold">{configs.NAME}</div>
-                <div className="text-lg text-primary">
-                  Plastik Üretim Teknolojileri
-                </div>
+              <h4 className="text-2xl font-semibold mb-8">
+                {about.head},
+                <span className="ml-2 text-primary">{configs.NAME}</span>
               </h4>
               <div>{htmlParser(about.content)}</div>
             </div>

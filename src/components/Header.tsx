@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import BG from "../assets/images/de.png";
 // Svg
 import MapSvg from "../assets/svgs/map.svg";
-// Images
-import FabrikaImg from "../assets/images/fabrika.png";
 // Data
 import settings from "../data/settings";
 import { Fragment } from "react";
@@ -84,18 +82,16 @@ const options = {
 class IntroProps {}
 const Intro = ({}: IntroProps) => {
   return (
-    <div className="lg:h-screen w-full pt-16" data-aos="fade-down">
+    <div className="lg:h-screen w-full pt-14" data-aos="fade-down">
       <Particles
         options={options}
         className="z-0 absolute left-0 top-0 w-full h-full"
       />
       <div className="container h-full mx-auto flex lg:flex-row flex-col-reverse items-center relative z-10">
-        <div className="lg:w-1/3 md:p-10 py-10">
-          <h1 className="mb-10" data-aos="fade-up">
-            <div className="text-3xl font-bold">Stamplast</div>
-            <div className="text-primary text-lg">
-              Plastik Üretim Teknolojileri
-            </div>
+        <div className="lg:w-1/2 md:p-10 py-10">
+          <h1 className="text-3xl font-semibold mb-10" data-aos="fade-up">
+            <span className="text-primary">Stamplast</span> Plastik Üretim
+            Teknolojileri
           </h1>
           <div className="text-gray-500 mb-10" data-aos="fade-up">
             <p>
@@ -114,11 +110,11 @@ const Intro = ({}: IntroProps) => {
             </Link>
           </div>
         </div>
-        <div className="lg:w-2/3 md:p-10 py-10" data-aos="fade-up">
+        <div className="lg:w-1/2 md:p-10 py-10" data-aos="fade-up">
           <Tilt className="mb-5">
             <img
               className="relative w-full rounded shadow z-10"
-              src={FabrikaImg}
+              src="https://lh3.googleusercontent.com/eOKK6I9KKALQksEAljq40sAg-XgrJcujZItPMFFBF3nmAAQnYwqaPAXMJIkyRPN_8eMpr-fpH1xPbOK6=w1080-h608-p-no-v0"
             />
           </Tilt>
           <a
@@ -145,7 +141,7 @@ class BreadcrumbProps {
 }
 const Breadcrumb = ({ breadcrumbs = [], head = "" }: BreadcrumbProps) => {
   return (
-    <div className="mt-24 lg:pt-2 mb-10 bg-white">
+    <div className="mt-16 lg:pt-2 mb-10 bg-white">
       <div
         className="bg-primary-50 py-6"
         style={{ backgroundImage: "url(" + BG + ")", backgroundSize: "100%" }}

@@ -22,7 +22,7 @@ import missionVisionGoalsData from "../data/missionVisionGoals";
 
 export default () => {
   let features = featuresData.slice(0, 6);
-  let products = productsData.slice(0, 3);
+  let products = productsData.slice(0, 4);
   let news = newsData.slice(0, 4);
   let brands = brandsData;
   let missionVisionGoals = missionVisionGoalsData;
