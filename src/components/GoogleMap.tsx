@@ -21,7 +21,7 @@ const GoogleMap = ({ lat = 0, lng = 0, google = null }: GoogleMapProps) => {
       >
         <Marker
           // @ts-ignore
-          name="Stamplast"
+          name="Stemplast"
         />
       </Map>
     </Tilt>

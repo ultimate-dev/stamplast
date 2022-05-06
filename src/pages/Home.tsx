@@ -47,12 +47,12 @@ export default () => {
                   data-aos="zoom-in"
                   data-aos-delay={200}
                 >
-                  Stamplast
+                  Stemplast
                 </span>
               </>
             }
             desc="Gelecek yıllarda sektörün en güçlü ve prestijli firmalardan biri
-            olmayı hedefleyen Stamplast, iş ortaklarına en iyi hizmeti vermeyi
+            olmayı hedefleyen Stemplast, iş ortaklarına en iyi hizmeti vermeyi
             hedeflemektedir."
           />
           <Features data={features} />
@@ -61,7 +61,7 @@ export default () => {
 
         <section className="relative section py-16" data-aos="fade-up">
           <Head.Section head="Ürünler" />
-          <Description data="Stamplast müşterilerini yüksek kalitede ve geniş bir ürün yelpazesiyle buluşturmak hedefiyle yola çıkmıştır. En ileri teknolojilerle ve en sıkı kalite kontrol prosedürleriyle üretilen ürünler; araç aydınlatma, ayna sistemlerinde ve araç iç ve dış trim parçaları olarak kullanılmaktadır." />
+          <Description data="Stemplast müşterilerini yüksek kalitede ve geniş bir ürün yelpazesiyle buluşturmak hedefiyle yola çıkmıştır. En ileri teknolojilerle ve en sıkı kalite kontrol prosedürleriyle üretilen ürünler; araç aydınlatma, ayna sistemlerinde ve araç iç ve dış trim parçaları olarak kullanılmaktadır." />
           <Products data={products} />
           <ViewLink to="/products" />
         </section>

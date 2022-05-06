@@ -49,13 +49,10 @@ export default ({}: NavbarProps) => {
       >
         <div data-aos="fade-down-right">
           <Link to="/">
-            <img
-              src={LogoImg}
-              className={
-                "object-contain transition-all ease-linear duration-200" +
-                (scroll ? " lg:h-12 h-10" : " lg:h-14 h-12")
-              }
-            />
+            <div className="font-bold text-xl">
+              <span>STEM</span>
+              <span className="text-primary">PLAST</span>
+            </div>
           </Link>
         </div>
         <div

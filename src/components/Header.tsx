@@ -20,7 +20,7 @@ const options = {
   },
   particles: {
     color: {
-      value: "#e6f3f9",
+      value: "#e9effe",
     },
     move: {
       attract: {
@@ -90,7 +90,7 @@ const Intro = ({}: IntroProps) => {
       <div className="container h-full mx-auto flex lg:flex-row flex-col-reverse items-center relative z-10">
         <div className="lg:w-1/2 md:p-10 py-10">
           <h1 className="text-3xl font-semibold mb-10" data-aos="fade-up">
-            <span className="text-primary">Stamplast</span> Plastik Üretim
+            <span className="text-primary">Stemplast</span> Plastik Üretim
             Teknolojileri
           </h1>
           <div className="text-gray-500 mb-10" data-aos="fade-up">
@@ -114,7 +114,7 @@ const Intro = ({}: IntroProps) => {
           <Tilt className="mb-5">
             <img
               className="relative w-full rounded shadow z-10"
-              src="https://lh3.googleusercontent.com/eOKK6I9KKALQksEAljq40sAg-XgrJcujZItPMFFBF3nmAAQnYwqaPAXMJIkyRPN_8eMpr-fpH1xPbOK6=w1080-h608-p-no-v0"
+              src="https://images.pexels.com/photos/210726/pexels-photo-210726.jpeg?cs=srgb&dl=pexels-pixabay-210726.jpg&fm=jpg"
             />
           </Tilt>
           <a

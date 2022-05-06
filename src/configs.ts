@@ -1,3 +1,3 @@
-export const NAME = "Stamplast";
-export const DOMAIN = "www.stamplast.com.tr";
-export const BASE_URL = "https://www.stamplast.com.tr";
+export const NAME = "Stemplast";
+export const DOMAIN = "www.stemplast.com.tr";
+export const BASE_URL = "https://www.stemplast.com.tr";

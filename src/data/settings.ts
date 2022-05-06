@@ -1,8 +1,8 @@
 export default {
-  phone: "+90 224 493 20 40",
-  email: "info@stamplast.com.tr",
-  address_long: "Kayapa Çamlık Mahallesi, Kayapa Sanayi Blv.",
-  address_short: "16315 Nilüfer/Bursa",
+  phone: "+90 555 555 55 55",
+  email: "info@stemplast.com.tr",
+  address_long: "Lorem ipsum dolor, consectetur",
+  address_short: "457834 consectetur",
   address_url: "https://goo.gl/maps/aDdHsktkUR7YCNA79",
 
   facebook: "https://goo.gl/maps/aDdHsktkUR7YCNA79",

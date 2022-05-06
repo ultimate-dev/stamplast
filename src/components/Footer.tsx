@@ -25,10 +25,16 @@ export default () => {
           <GoogleMap lat={settings.lat} lng={settings.lng} />
         </div>
 
-        <div className="flex flex-wrap lg:flex-row flex-col items-center lg:justify-between justify-center py-3 border-b border-gray-100" data-aos="fade-up">
+        <div
+          className="flex flex-wrap lg:flex-row flex-col items-center lg:justify-between justify-center py-3 border-b border-gray-100"
+          data-aos="fade-up"
+        >
           <div className="py-2">
             <Link to="/">
-              <img src={LogoImg} className="object-contain h-14" />
+              <div className="font-bold text-xl">
+                <span>STEM</span>
+                <span className="text-primary">PLAST</span>
+              </div>
             </Link>
           </div>
           <div className="flex items-center flex-wrap justify-center py-2">
@@ -57,7 +63,10 @@ export default () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap lg:flex-row flex-col items-center lg:justify-between justify-center py-3" data-aos="fade-up">
+        <div
+          className="flex flex-wrap lg:flex-row flex-col items-center lg:justify-between justify-center py-3"
+          data-aos="fade-up"
+        >
           <div className="py-2">
             <a href={"mailto:" + settings.email}>
               <span className="text-gray-500 text-sm">{settings.email}</span>
